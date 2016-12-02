@@ -1,0 +1,19 @@
+body {
+  background: #eee;
+}
+
+.container {
+  background: #fff;
+}
+
+
+.employee-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.employee-list .thumbnail {
+  width: 300px;
+}

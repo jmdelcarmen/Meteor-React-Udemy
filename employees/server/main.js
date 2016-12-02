@@ -30,7 +30,7 @@ Meteor.startup(() => {
   }
 
   //send back only 20 employees
-  Meteor.publish('employees', function () {
-    return Employees.find({}, {limit: 20});
+  Meteor.publish('employees', function (per_page) {
+    return Employees.find({}, {limit: per_page});
   });
 });
