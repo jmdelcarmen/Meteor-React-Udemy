@@ -16,6 +16,7 @@ Meteor.startup(() => {
   //See if collection has any records
   if (!numberRecords) {
     //Generate some data
+    // function will run 5000 times
     _.times(5000, () => {
       //using ES6 destructuring
       const { name, email, phone } = helpers.createCard();
@@ -27,4 +28,9 @@ Meteor.startup(() => {
       });
     });
   }
+
+  //send back only 20 employees
+  Meteor.publish('employees', function () {
+    return Employees.find({}, {limit: 20});
+  });
 });
