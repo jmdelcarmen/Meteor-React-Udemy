@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  background: #eee;
+}
+
+#container {
+  margin: 0 auto;
+  min-height: calc(100vh - 220px);
+  width: 80%;
+}
+
+h1 {
+  margin: 0 0 1em;
+  padding: .3em;
+  font-size: 4em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1::first-letter {
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+li {
+  border: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+footer {
+  height: 220px;
+  background: #454545;
+}
