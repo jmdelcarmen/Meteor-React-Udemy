@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import EmployeeList from './components/employee_list';
 
 const App = () => {
@@ -12,10 +12,8 @@ const App = () => {
   );
 }
 
-
-
 //wait for meteor to load in the browser
 Meteor.startup(() => {
   //React render call
-  ReactDOM.render(<App/>, document.querySelector('.container'));
+  render(<App/>, document.querySelector('.container'));
 });

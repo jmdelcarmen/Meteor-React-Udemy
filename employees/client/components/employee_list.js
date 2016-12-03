@@ -10,6 +10,8 @@ const PER_PAGE = 20;
 //class-based components we get access to the props through //this.props
 class EmployeeList extends Component {
   componentWillMount() {
+    //gets run before component is returned
+    //this refers to the EmployeeList component
     this.page = 1;
   }
   //bind this event to the click handler on the button
@@ -19,13 +21,14 @@ class EmployeeList extends Component {
   }
 
   render () {
+    const { employees } = this.props;
     // props.employees => array of employee objects
     //by calling the Meteor.subscribe method again, we are
     // updating the subscription
     return (
       <div>
         <div className="employee-list">
-          {this.props.employees.map(employee => <EmployeeDetail key={employee._id} employee={employee}/>)}
+          {employees.map(employee => <EmployeeDetail key={employee._id} employee={employee}/>)}
         </div>
         <button onClick={this.handleButtonClick.bind(this)} className="btn btn-block btn-primary">Load More ...</button>
       </div>
