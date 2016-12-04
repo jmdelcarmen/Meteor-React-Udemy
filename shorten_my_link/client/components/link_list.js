@@ -6,6 +6,7 @@ import { Links } from '../../imports/collections/links';
 
 
 class LinkList extends Component {
+
   renderRows() {
     return this.props.links.map(link => {
       const { url, clicks, token } = link;
