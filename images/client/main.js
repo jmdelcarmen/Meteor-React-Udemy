@@ -4,7 +4,7 @@
 //Import react library
 //define react component
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import axios from 'axios';
 import ImageList from './components/image_list';
 
@@ -53,6 +53,6 @@ class Footer extends Component {
 Meteor.startup(() => {
   // <App/> creates an instanct of the App component
   //render component to screen
-  ReactDOM.render(<App/>, document.getElementById('container'));
-  ReactDOM.render(<Footer/>, document.querySelector('footer'));
+  render(<App/>, document.getElementById('container'));
+  render(<Footer/>, document.querySelector('footer'));
 });
