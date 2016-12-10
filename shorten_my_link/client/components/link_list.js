@@ -19,8 +19,8 @@ class LinkList extends Component {
           </td>
           <td>{ clicks }</td>
         </tr>
-      )
-    })
+      );
+    });
   }
 
 

@@ -15,6 +15,7 @@ class LinkCreate extends Component {
     //get access to value in the form
     //using the refs system
     //getting the value of the input with theh ref of longUrl
+    //refs is like ng-model
     //similar to the name property in input elements
     //calling a meteor method
     Meteor.call('links.insert', this.refs.longUrl.value, (err) => {
