@@ -3,8 +3,8 @@
 import { Mongo } from 'meteor/mongo';
 
 Meteor.methods({
+
   'bins.insert': function() {
-    console.log(this.userId);
     return Bins.insert({
       createdAt: new Date(),
       content: '',
@@ -14,9 +14,19 @@ Meteor.methods({
   },
 
   'bins.remove': function(bin) {
-    console.log('Bin removed');
     return Bins.remove(bin);
+  },
+
+  'bins.update': function (bin, content) {
+    //content using ES6 convention
+    return Bins.update(bin._id, { $set: { content } });
+  },
+
+  'bins.share': function (bin, email) {
+    return Bins.update(bin._id, { $push: { sharedWith: email } });
   }
+
+
 });
 
 export const Bins = new Mongo.Collection('bin');
