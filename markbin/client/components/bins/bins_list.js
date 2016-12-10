@@ -38,6 +38,7 @@ class BinsList extends Component {
 
 export default createContainer(() => {
   Meteor.subscribe('bins');
+  Meteor.subscribe('sharedBins');
   //whatever is returned from this function
   //shows up as props in the BinsList
   return { bins: Bins.find({}).fetch() };
