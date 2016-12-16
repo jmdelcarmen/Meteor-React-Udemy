@@ -15,9 +15,6 @@ class BinShare extends Component {
     });
   }
 
-
-
-
   render() {
     return(
       <footer className="bins-share">

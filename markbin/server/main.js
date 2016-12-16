@@ -4,11 +4,12 @@ import { Meteor } from 'meteor/meteor';
 import { Bins } from '../imports/collections/bins';
 
 Meteor.startup(() => {
-  //bins for the user
+  //bins by the user
   Meteor.publish('bins', function () {
     return Bins.find({ownerId: this.userId});
   });
 
+  //bins shared to the user
   Meteor.publish('sharedBins', function () {
     const user = Meteor.users.findOne(this.userId);
     const email = user.emails[0].address;
