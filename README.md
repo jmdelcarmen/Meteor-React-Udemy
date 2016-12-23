@@ -29,13 +29,13 @@ The project should be running on [localhost:3000](http://localhost:3000)
 * Security with Meteor's accounts:password package
 
 **Projects**
-1. [Images](https://github.com/jmdelcarmen/meteor-react/tree/master/images)
+* [Images](https://github.com/jmdelcarmen/meteor-react/tree/master/images)
   -- a simple React primer project that communicates with the Imgur API in order to get images/gifs and their respective titles and descriptions, to display them on a web page.
-2. [Employees](https://github.com/jmdelcarmen/meteor-react/tree/master/employees)
+* [Employees](https://github.com/jmdelcarmen/meteor-react/tree/master/employees)
   -- this project integrates data through Meteor's publish and subscribe system with React as a front-end library that injects said data in it's components.
-3. [Shorten My Link](https://github.com/jmdelcarmen/meteor-react/tree/master/shorten_my_link)
+* [Shorten My Link](https://github.com/jmdelcarmen/meteor-react/tree/master/shorten_my_link)
   -- a link shortening service that exhibits Meteor's routing functionality.
-4. [Todos](https://github.com/jmdelcarmen/meteor-react/tree/master/todos)
+* [Todos](https://github.com/jmdelcarmen/meteor-react/tree/master/todos)
   -- a simple todos app that integrates authentication using Meteor's default front-end framework, Blaze.
-5. [Markbin](https://github.com/jmdelcarmen/meteor-react/tree/master/markbin)
+* [Markbin](https://github.com/jmdelcarmen/meteor-react/tree/master/markbin)
   -- a markdown editor app driven by the React Codemirror package that simply converts markdown syntax into HTML elements.
