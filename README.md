@@ -2,25 +2,25 @@
 Building dynamic web apps with Meteor JS an React JS.
 
 ## Getting Started
-1. **Install Meteor**
+1. Install Meteor
 ```sh
 $ curl https://install.meteor.com/ | sh
 ```
-2. **Clone This Repository**
+2. Clone This Repository
 ```sh
 $ git clone https://github.com/jmdelcarmen/meteor-react
 $ cd meteor-react
 ```
-3. **Pick a project and Install Dependencies**
+3. Pick a project and Install Dependencies
 ```sh
 $ cd <PROJECT_NAME>
 $ npm install
 ```
-4. **Start The Server**
+4. Start The Server
 ```sh
 $ meteor
 ```
-5. **Open up a browser**
+5. Open up a browser
 The project should be running on [localhost:3000](http://localhost:3000)
 
 **Topics**
